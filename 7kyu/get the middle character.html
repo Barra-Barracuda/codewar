@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var p1 = getMiddle("test"); //es
+	var p2 = getMiddle("testing"); //t
+	var p3 = getMiddle("middle"); //dd
+	var p4 = getMiddle("A"); //A
+
+		function getMiddle(str){
+			return str.substr(Math.ceil(str.length / 2 - 1) , str.length % 2 == 0 ? 2 : 1); //因为substr第一个参数是0开始的所以要减1
+			//首字符的索引为 0，最后一个字符的索引为 字符串的长度减去1
+		}
+
+		console.log(p1);
+		console.log(p2);
+		console.log(p3);
+		console.log(p4);
+	</script>
+</body>
+</html>

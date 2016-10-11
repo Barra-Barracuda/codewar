@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var p1 = toInitials("Tom Araya") //"T. A."
+	var p2 = toInitials("Kerry King")// "K. K."
+
+	// function toInitials(str) {
+	// 	var temp = [];
+	// 	str = str.split(' ');
+	// 	for(var i=0;i<str.length;i++){
+	// 		temp.push(str[i][0]+'.');
+	// 	}
+	// 	return temp.join('');
+	// }
+
+	function toInitials(name){
+	return name.replace(/(\S)\w*/g, '$1.'); //\S匹配到第一个字母
+	}
+	console.log(p1);
+	console.log(p2);
+
+	</script>
+</body>
+</html>

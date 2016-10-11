@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function findShort(s){
+		return Math.min(...s.split(" ").map (s => s.length));
+		}
+
+// 		function findShort(s){
+//  return s.split(' ').sort(function(a,b){
+//     return b.length - a.length ;
+//   }).pop().length;
+// }
+
+var p1 = findShort("bitcoin take over the world maybe who knows perhaps"); //3
+var p2 = findShort("turns out random test cases are easier than writing out basic ones") //3
+
+console.log(p1);
+console.log(p2);
+	</script>
+</body>
+</html>

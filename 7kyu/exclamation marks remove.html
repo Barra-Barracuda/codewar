@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var p1 = remove("!!!Hi!! !!hi!!! !hi!") //!!!Hi !!hi !hi
+
+		function remove(str){
+			return str.replace(/(\w+)!+/g,'$1');
+		}
+		console.log(p1);
+
+	</script>
+</body>
+</html>

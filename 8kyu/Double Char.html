@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var p1 = doubleChar('abcd'); //aabbccdd
+	var p2 = doubleChar('Adidas'); //AAddiiddaass
+
+		function doubleChar(str) {
+			return str.replace(/(.)/g,"$1$1");
+		}
+
+		// function doubleChar(str) {
+		// 	return str.split('').map(function(item){
+		// 		return item + item ;
+		// 	}).join('');
+		// }
+
+		console.log(p1);
+		console.log(p2);
+
+	</script>
+</body>
+</html>

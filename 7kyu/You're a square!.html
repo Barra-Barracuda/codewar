@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var p1 = isSquare(1);
+	var p2 = isSquare(3);
+	var p3 = isSquare(4);
+	var p4 = isSquare(25);
+
+	// function isSquare(n) {
+	// 		return Math.sqrt(n) % 1 == 0;
+	// 	}
+
+	// function isSquare(n) {
+	// 	return Number.isInteger(Math.sqrt(n));
+	// }
+
+	//~~按位非：对任一数值 x 进行按位非操作的结果为 -(x + 1)。例如，~5 结果为 -6。再反转就是 -6结果为5
+
+	 function isSquare(n){
+	 	n = Math.sqrt(n);
+	 	return ~~n == n ;
+	}
+	console.log(p1);	
+	console.log(p2);
+	console.log(p3);
+	console.log(p4);				
+	</script>
+</body>
+</html>
