@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  function maskify(cc) {
+    //return cc.slice(0,-4).replace(/./g,'#') + cc.slice(-4);
+    return cc.replace(/.(?=.{4})/g,'#');//x(?=y)  只有当 x 后面紧跟着 y 时，才匹配 x。
+  }
+
+  console.log(maskify('4556364607935616'))//############5616
+  </script>
+</body>
+</html>

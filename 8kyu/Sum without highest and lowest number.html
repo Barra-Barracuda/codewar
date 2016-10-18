@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	// let sumArray = a => a?a.sort((x,y)=>x-y).slice(1,-1).reduce((a,b) => a + b):0
+
+	function sumArray(arr) {
+		if(arr == null && arr.length < 2){
+			return 0;
+		}else{
+			arr.sort(function(a,b){return a - b});
+			var total = 0;
+			for(var i=1;i<arr.length-1;i++){
+				total += arr[i];
+			}
+			return total;
+		}
+	}
+
+	console.log(sumArray([ 6, 2, 1, 8, 10 ]));
+	</script>
+</body>
+</html>
